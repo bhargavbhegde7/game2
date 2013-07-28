@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="js/jquery-2.0.2.min.js">
+</script>
+<script type="text/javascript" src="js/game.js">
+</script>
+</head>
+<body>
+
+<table border=1 style="position:absolute;left:0px;top:60px">
+<tr> <td>hits in this level:</td> <td>total hits:</td> <td>number of tries:</td> <td>level:</td> </tr>
+<tr> <td><p id="mHits">-</p></td> <td><p id="hits">-</p></td> <td><p id="count">-</p></td> <td><p id="level">-</p></td> </tr>
+</table>
+
+<div class="myPlayer" style="height:74px;width:74px;position:absolute;left:450px;top:321px" id="myPlayer">
+<img id="myPlayer1" src="images/player.png" height="74px" width="74px"/>
+</div>
+<div style="position:absolute;left:200px;top:200px" >
+<input type="button" onclick="startGame()" id="start_stop" style="width:200px; height:60px;" value="START">
+</div>
+<img src="" id="explosion"></img>
+<div class="myBox" style="position:absolute;left:0px;top:324px" id="b1">
+<img src="images/box.png" height="25px" width="50px"/>
+</div>
+<div class="myBox1" style="position:absolute;left:0px;top:365px" id="b2">
+<img src="images/box.png" height="25px" width="50px"/>
+</div>
+
+<!-- <div class="myLine" style="background:#585858 ;height:5px;width:448px;position:absolute;left:0px;top:393px;" id="myLine">
+</div>
+<div class="myLine" style="background:#585858 ;height:5px;width:448px;position:absolute;left:0px;top:318px;" id="myLine">
+</div>
+<div class="myLine" style="background:#585858 ;height:5px;width:380px;position:absolute;left:526px;top:393px;" id="myLine">
+</div>
+<div class="myLine" style="background:#585858 ;height:5px;width:380px;position:absolute;left:526px;top:318px;" id="myLine">
+</div> -->
+<p style="position:absolute;left:0px;top:0px"> Try and avoid the red block hitting the moving blue blocks.
+ You can use <br/>the up and down 
+arrow keys to move the middle red block </p>
+<div class="myBox" style="position:absolute;left:453px;top:0px" id="b3"><!-- top left-->
+<img src="images/box.png" height="50px" width="25px"/>
+</div>
+<div class="myBox1" style="position:absolute;left:496px;top:0px" id="b4"><!-- top right-->
+<img src="images/box.png" height="50px" width="25px"/>
+</div>
+
+<!-- <div class="myLine" style="background:#585858 ;height:247px;width:5px;position:absolute;left:447px;top:393px;" id="myLine">
+</div>
+<div class="myLine" style="background:#585858 ;height:323px;width:5px;position:absolute;left:447px;top:0px;" id="myLine">
+</div>
+<div class="myLine" style="background:#585858 ;height:247px;width:5px;position:absolute;left:522px;top:393px;" id="myLine">
+</div>
+<div class="myLine" style="background:#585858 ;height:315px;width:5px;position:absolute;left:522px;top:0px;" id="myLine">
+</div>-->
+<!-- other 4 boxes -->
+<div class="myBox" style="position:absolute;left:453px;top:590px" id="b5"><!-- bottom left-->
+<img src="images/box.png" height="50px" width="25px"/>
+</div>
+<div class="myBox1" style="position:absolute;left:496px;top:590px" id="b6"><!-- bottom right-->
+<img src="images/box.png" height="50px" width="25px"/>
+</div>
+<div class="myBox" style="position:absolute;left:900px;top:324px" id="b7"><!-- right top -->
+<img src="images/box.png" height="25px" width="50px"/>
+</div>
+<div class="myBox1" style="position:absolute;left:900px;top:365px" id="b8"><!-- right bottom-->
+<img src="images/box.png" height="25px" width="50px"/>
+</div>
+<div class="wall" style="background:#585858 ;height:80px;width:60px;position:absolute;left:0px;top:318px;" id="wall">
+</div>
+<div class="wall" style="background:#585858 ;height:80px;width:60px;position:absolute;left:900px;top:318px;" id="wall">
+</div>
+<div class="wall" style="background:#585858 ;height:60px;width:80px;position:absolute;left:447px;top:0px;" id="wall">
+</div>
+<div class="wall" style="background:#585858 ;height:60px;width:80px;position:absolute;left:447px;top:580px;" id="wall">
+</div>
+</body>
+</html>
