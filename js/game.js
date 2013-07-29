@@ -19,7 +19,7 @@ function startMove()
 {
 if(mHits>=3)
 {
-document.write(" you have crossed the maximum number of hits (3) in a single level. game over ");
+document.write(" you have crossed the maximum number of hits (3) in a single level. GAME OVER");
 document.write(" summary: tries= "+count+" total hits= "+hits+" last level "+level+" please reload to play again ");
 }
 if(count>0)
