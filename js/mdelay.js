@@ -48,10 +48,10 @@ setTimeout(
   }
   }
   break;
-  //_________________________________//collide left box
+  //_________________________________//collide left upper box
   //_________________________________  
   case "b3":
-  if(pos>=315)
+  if(pos>=269)
   {
   if(!right)
   {  
@@ -69,10 +69,10 @@ setTimeout(
   }
   break;
   
-  //_________________________________//collide right box
+  //_________________________________//collide right upper box
   //_________________________________
 	case "b4":
-  if(pos>=315)
+  if(pos>=269)
   {
   if(!left)
   {  
@@ -91,7 +91,7 @@ setTimeout(
   break;
   //--------------------------------another 4 boxes
   case "b5"://bottom left
-  if(pos2<=315)
+  if(pos2<=397)
   {
   if(!right)
   {  
@@ -109,7 +109,7 @@ setTimeout(
   }
   break;
   case "b6"://bottom right
-  if(pos2<=315)
+  if(pos2<=397)
   {
   if(!left)
   {  
@@ -127,7 +127,7 @@ setTimeout(
   }
   break;
   case "b7"://right top
-  if(pos4<=400)
+  if(pos4<=530)
   {
   if(!down)
   {  
@@ -145,7 +145,7 @@ setTimeout(
   }
   break;
   case "b8"://right bottom
-  if(pos4<=400)
+  if(pos4<=530)
   {
   if(!up)
   {  
